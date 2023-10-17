@@ -1,0 +1,67 @@
+*
+  {
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-oscuro:#0054a4;
+    --color-medio: #007dc3;
+    --color-claro: #a4d7f4;
+    --color-secundario: #e11b22;
+    --color-secundario-claro: #e1abb2;
+  }
+
+.cabecera
+ {
+        background-color: var(--color-oscuro);
+        color: var(--color-claro);
+        display: block;
+        padding: 2%;
+        font-size: 150%;
+        text-align: center;
+        padding: 2%;
+        text-shadow: #000000;
+        text-transform: uppercase;
+   }
+
+.jugador
+  {
+    margin: 2%;
+    padding: 2%;
+    border: var(--color-oscuro);
+    border-radius: 12px;
+    width: 40%;
+    background-color: var(--color-claro);
+    color: var(--color-oscuro);
+    height:90%;
+  }
+
+#persona
+{
+    float: left;
+}
+
+#ordenador
+{
+    float: right;
+}
+
+.campo
+	{
+        padding: 1%;
+        margin: 1%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+.boton
+    {
+    background-color: var(--color-oscuro); 
+    border: none;
+    color: var(--color-claro);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2%;
+    }
