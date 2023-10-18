@@ -1,14 +1,19 @@
 let nombre;
 let etiquetaJugador;
-let articulos;
-let barraLateral;
+let botonNombre;
 
 
 window.addEventListener("load",() => {
 	nombre = document.getElementById('nombre');
-    let etiquetaJugador = document.getElementById("persona");
+    etiquetaJugador = document.getElementById("persona");
+	botonNombre = document.getElementById("botonNombre");
 
-    etiquetaJugador.innerHTML = "<h3>Pepe</h3>";
+    botonNombre.addEventListener("onclick",()=>{
+//		botonNombre.style.color = "yellow";
+		etiquetaJugador.innerHTML = "<h3>Pepe</h3>";
+	});
+
+    
 
 	
 /*	primerArticulo = parrafos[0];
