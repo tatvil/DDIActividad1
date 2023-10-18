@@ -11,6 +11,7 @@ un número aleatorio.
 el resultado del juego según las siguientes reglas:
     * Si ambas elecciones son iguales, es un empate.
     * Si no, las reglas son las siguientes:
+      
 * Muestra el resultado del juego al jugador.
 * Permite al jugador jugar nuevamente si lo desea.
 
