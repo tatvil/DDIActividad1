@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DDI - Actividad 1</title>
+    <script type="text/javascript" src="codigo.js"></script>
     <link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="codigo.js"></script>
 </head>
 <body>
     
@@ -15,19 +15,23 @@
 	</div>
     
     <div class="jugador" id="persona">
-        <h3>Jugador</h3>
+        <div>
+            <h3>Jugador</h3>
+            <h3 class="puntuacion">0</h3>
+        </div>
         <div class="nombre">
             <form>
                 <label for="nombre" id="label-nombre">Nombre del jugador: </label>
                 <input class="campo" type='text' name="nombre" id="nombre">
-                <input type="submit" class="boton" value="OK">
+                <input type="submit" class="boton" id="botonNombre" value="OK">
+                <span class="error" id="errorNombre">mensaje</span>
             </form>
         </div>
     </div>
 
     <div class="jugador" id="ordenador">
         <h3>Ordenador</h3>
-        <p>Hola</p>
+        <h3 class="puntuacion">0</h3>
     </div>
 
 

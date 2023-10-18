@@ -21,15 +21,17 @@
         padding: 2%;
         text-shadow: #000000;
         text-transform: uppercase;
+        height: 10%;
    }
 
 .jugador
   {
     margin: 2%;
     padding: 2%;
-    border: var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
     border-radius: 12px;
     width: 40%;
+    height:90%;
     background-color: var(--color-claro);
     color: var(--color-oscuro);
     height:90%;
@@ -44,6 +46,11 @@
 {
     float: right;
 }
+
+.puntuacion
+  {
+    color: var(--color-medio);
+  }
 
 .campo
 	{
@@ -65,3 +72,8 @@
     font-size: 16px;
     margin: 2%;
     }
+    
+.error
+  {
+    color: red;
+  }

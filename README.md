@@ -18,13 +18,16 @@ el resultado del juego según las siguientes reglas:
 ## Elementos obligatorios:
 1. El jugador deberá poder introducir su nombre en un formulario. El juego se
 activará en ese momento. (1 punto):
-![Introducir nombre](images/introducir-nombre.jpg)
+![Introducir nombre](image.png)
 2. El jugador elegirá una de las opciones. En el ejemplo, las imágenes se
 hacen más grandes cuando el cursor para por encima y recuperan su
 tamaño original al salir. (1 punto)
 3. Debe ser claro la opción elegida por el jugador y por el ordenador. Se
 mostrará quién ha ganado la partida tanto por puntos como por mensaje en
 todos los casos posibles (6 puntos):
+![Claridad de ejecucion](images/claridad-de-ejecucion-1.jpg)
+![Claridad de ejecucion](images/claridad-de-ejecucion-2.jpg)
+![Claridad de ejecucion](images/claridad-de-ejecucion-3.jpg)
 4. Si se vuelve a introducir otro nombre y reiniciar el juego, todos los
 elementos deberán resetearse (1 punto).
 5. Se puede cambiar la estética, la estructura y los estilos de la página. Se
