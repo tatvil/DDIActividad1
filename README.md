@@ -11,13 +11,14 @@ un número aleatorio.
 el resultado del juego según las siguientes reglas:
     * Si ambas elecciones son iguales, es un empate.
     * Si no, las reglas son las siguientes:
-      
+![Esquema quien gana](images/esquema-quien-gana.jpg)
 * Muestra el resultado del juego al jugador.
 * Permite al jugador jugar nuevamente si lo desea.
 
 ## Elementos obligatorios:
 1. El jugador deberá poder introducir su nombre en un formulario. El juego se
 activará en ese momento. (1 punto):
+![Introducir nombre](images/introducir-nombre.jpg)
 2. El jugador elegirá una de las opciones. En el ejemplo, las imágenes se
 hacen más grandes cuando el cursor para por encima y recuperan su
 tamaño original al salir. (1 punto)
