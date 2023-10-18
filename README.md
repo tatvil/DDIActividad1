@@ -9,8 +9,8 @@ Porcentaje: 50%
 un número aleatorio.
 3. Compara la elección del jugador con la elección del oponente y determina
 el resultado del juego según las siguientes reglas:
-> Si ambas elecciones son iguales, es un empate.
-> Si no, las reglas son las siguientes:
+>> Si ambas elecciones son iguales, es un empate.
+>> Si no, las reglas son las siguientes:
 4. Muestra el resultado del juego al jugador.
 5. Permite al jugador jugar nuevamente si lo desea.
 
