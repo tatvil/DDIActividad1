@@ -3,16 +3,16 @@
 Fecha de entrega: 31 de octubre
 Porcentaje: 50%
 
-1. Crea un programa que permita al jugador ingresar su elección: "piedra",
+* Crea un programa que permita al jugador ingresar su elección: "piedra",
 "papel", "tijeras", “lagarto” o “Spock”.
-2. Genera aleatoriamente la elección del oponente (el ordenador) utilizando
+* Genera aleatoriamente la elección del oponente (el ordenador) utilizando
 un número aleatorio.
-3. Compara la elección del jugador con la elección del oponente y determina
+* Compara la elección del jugador con la elección del oponente y determina
 el resultado del juego según las siguientes reglas:
     > Si ambas elecciones son iguales, es un empate.
     > Si no, las reglas son las siguientes:
-4. Muestra el resultado del juego al jugador.
-5. Permite al jugador jugar nuevamente si lo desea.
+* Muestra el resultado del juego al jugador.
+* Permite al jugador jugar nuevamente si lo desea.
 
 ## Elementos obligatorios:
 1. El jugador deberá poder introducir su nombre en un formulario. El juego se
