@@ -7,30 +7,30 @@ let puntosPersona;
 
 function comenzarPartida()
 	{
-		etiquetaJugador.textContent = "Tu: "+nombre;
+		etiquetaJugador.value = "Tu: "+nombre;
 		puntosPersona.textContent = puntosPersona + 1;
 	}
 
 function verificarNombre()
 	{
-		nombre = document.getElementById('nombre').value;
+		nombre = document.getElementById('nombre');
 		
-		if (nombre == "" )
+		if(nombre.value.length == 0)
 			{
-				alert ("El nombre no puede estar vacio");
+			errorNombre.innerHTML ="El nombre no puede estar vacio";
 			}
-		else
-			{
-				comenzarPartida();
+		else{
+			errorNombre.innerHTML ="Todo bien";
 			}
 	}
 
 function inicializarVariables ()
   {
 	nombre = document.getElementById('nombre');
-    etiquetaJugador = document.getElementById("persona");
+    etiquetaJugador = document.getElementById("etiquetaJugador");
 	botonNombre = document.getElementById("botonNombre");
 	errorNombre = document.getElementById("errorNombre");
+	errorArticulo = document.getElementById("errorArticulo");
 	puntosOrdenador = document.getElementById("puntos-ordenador");
 	puntosPersona = document.getElementById("puntos-persona");
   }

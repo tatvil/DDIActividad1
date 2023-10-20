@@ -19,7 +19,7 @@
         font-size: 150%;
         text-align: center;
         padding: 2%;
-        text-shadow: #000000;
+        text-shadow: 12px #000000;
         text-transform: uppercase;
         height: 10%;
    }
@@ -32,17 +32,16 @@
     border-radius: 12px;
     width: 40%;
     height:90%;
-    background-color: var(--color-claro);
     color: var(--color-oscuro);
     height:90%;
   }
 
-#persona
+.jugador,#nombre-persona
 {
     float: left;
 }
 
-#ordenador
+.puntuacion
 {
     float: right;
 }
@@ -71,6 +70,7 @@
     display: inline-block;
     font-size: 16px;
     margin: 2%;
+    border-radius: 12px;
     }
     
 .error

@@ -13,25 +13,42 @@
 		<h1>DDI - Actividad 1</h1>
         <h2>Piedra - papel - tijera - lagarto - spock</h2>
 	</div>
+
+    <div class="nombre">
+        <form>
+            <label for="nombre" id="labelNombre">Nombre del jugador: </label>
+            <input class="campo" type='text' id="nombre">
+            <span class="error" id="errorNombre"></span>
+            <input type="submit" class="boton" id="botonNombre" value="OK">          
+        </form>
+    </div>
     
     <div class="jugador" id="persona">
-        <div>
-            <h3>Jugador</h3>
-            <h3 class="puntuacion">0</h3>
+        <div class="cabecera-jugador">
+            <h3 id="etiquetaJugador">Jugador</h3>
+            <h3 class="puntuacion" id="puntos-persona">0</h3>
         </div>
-        <div class="nombre">
-            <form>
-                <label for="nombre" id="label-nombre">Nombre del jugador: </label>
-                <input class="campo" type='text' name="nombre" id="nombre">
-                <input type="submit" class="boton" id="botonNombre" value="OK">
-                <span class="error" id="errorNombre">mensaje</span>
-            </form>
+        <div>
+            <input type="submit" class="boton" id="piedra" value="Piedra">
+            <input type="submit" class="boton" id="papel" value="Papel">
+            <input type="submit" class="boton" id="tijera" value="Tijera">
+            <input type="submit" class="boton" id="lagarto" value="Lagarto">
+            <input type="submit" class="boton" id="Spok" value="Spok">
         </div>
     </div>
 
     <div class="jugador" id="ordenador">
-        <h3>Ordenador</h3>
-        <h3 class="puntuacion">0</h3>
+        <div class="cabecera-jugador">
+            <h3>Ordenador</h3>
+            <h3 class="puntuacion" id="puntos-ordenador">0</h3>
+        </div>
+        <div>
+            <p class="boton">Piedra</p>
+            <p class="boton">Papel</p>
+            <p class="boton">Tijera</p>
+            <p class="boton">Lagarto</p>
+            <p class="boton">Spok</p>
+        </div>
     </div>
 
 
