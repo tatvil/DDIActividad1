@@ -7,8 +7,8 @@ let puntosPersona;
 
 function comenzarPartida()
 	{
-		etiquetaJugador.value = "Tu: "+nombre;
-		puntosPersona.textContent = puntosPersona + 1;
+		etiquetaJugador.textContent = "Tu: "+nombre;
+		puntosPersona.textContent.value = puntosPersona.textContent.value + 1;
 	}
 
 function verificarNombre()
@@ -17,10 +17,10 @@ function verificarNombre()
 		
 		if(nombre.value.length == 0)
 			{
-			errorNombre.innerHTML ="El nombre no puede estar vacio";
+			errorNombre.textContent ="El nombre no puede estar vacio";
 			}
 		else{
-			errorNombre.innerHTML ="Todo bien";
+			errorNombre.textContent ="Todo bien";
 			}
 	}
 
