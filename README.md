@@ -18,7 +18,7 @@ el resultado del juego según las siguientes reglas:
 ## Elementos obligatorios:
 1. El jugador deberá poder introducir su nombre en un formulario. El juego se
 activará en ese momento. (1 punto):
-![Introducir nombre](image.png)
+![Introducir nombre](images/nombre.png)
 2. El jugador elegirá una de las opciones. En el ejemplo, las imágenes se
 hacen más grandes cuando el cursor para por encima y recuperan su
 tamaño original al salir. (1 punto)
