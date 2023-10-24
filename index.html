@@ -23,37 +23,48 @@
         </form>
     </div>
     
-    <div class="jugador" id="persona">
-        <div class="cabecera-jugador">
-            <h3 id="etiquetaJugador">Jugador</h3>
-            <h3 class="puntuacion" id="puntos-persona">0</h3>
+    <div class="cuerpo">
+        <div style="order: 1" class="columna" id="persona">
+            <div class="cabecera-jugador">
+                <h3 class="columna" style="order: 1" id="etiquetaJugador">Jugador</h3>
+                <h3 class="columna" style="order: 2" id="puntos-persona">0</h3>
+            </div>
+            <div>
+                <img src="images/piedra.png" id="piedra" class="boton">
+                <img src="images/papel.png" id="papel"  class="boton">
+                <img src="images/tijera.png" id="tijera" class="boton">
+                <img src="images/lagarto.png" id="lagarto" class="boton">
+                <img src="images/spock.png" id="spock" class="boton">
+            </div>
+            <div>
+                <p id="eleccionjugador">adios</p>
+            </div>
         </div>
-        <div>
-            <input type="button" class="boton" id="piedra" value="Piedra">
-            <input type="button" class="boton" id="papel" value="Papel">
-            <input type="button" class="boton" id="tijera" value="Tijera">
-            <input type="button" class="boton" id="lagarto" value="Lagarto">
-            <input type="button" class="boton" id="spok" value="Spok">
-        </div>
-    </div>
 
-    <div class="jugador" id="ordenador">
-        <div class="cabecera-jugador">
-            <h3>Ordenador</h3>
-            <h3 class="puntuacion" id="puntos-ordenador">0</h3>
+        <div style="order: 2" class="columna" id="imagencentro">
+            <img src="images/esquemaminimalista.png">
+            <p id="resultado">resultado</p>
         </div>
-        <div>
-            <p class="boton">Piedra</p>
-            <p class="boton">Papel</p>
-            <p class="boton">Tijera</p>
-            <p class="boton">Lagarto</p>
-            <p class="boton">Spok</p>
-        </div>
-    </div>
 
-    <div class="centro">
-        <img src="images/esquema-quien-gana.jpg">
-        <p id="resultado">resultado</p>
-    </div>
+        <div style="order: 3" class="columna" id="ordenador">
+            <div class="cabecera-jugador">
+                <h3>Ordenador</h3>
+                <h3 class="puntuacion derecha" id="puntos-ordenador">0</h3>
+            </div>
+            <div>
+                <img src="images/piedra.png" class="boton">
+                <img src="images/papel.png"  class="boton">
+                <img src="images/tijera.png" class="boton">
+                <img src="images/lagarto.png" class="boton">
+                <img src="images/spock.png" class="boton">
+            </div>
+            
+            <div>
+                <p id="eleccionordenador">hola</p>
+            </div>
+        </div>
+
+</div> 
+
 </body>
 </html>

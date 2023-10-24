@@ -19,34 +19,38 @@
         font-size: 150%;
         text-align: center;
         padding: 2%;
-        text-shadow: 12px #000000;
+        text-shadow: 2px 2px var(--color-medio);
         text-transform: uppercase;
         height: 10%;
    }
 
-.jugador
-  {
-    margin: 2%;
-    padding: 2%;
-    border: 1px solid var(--color-oscuro);
-    border-radius: 12px;
-    width: 25%;
-    height:90%;
-    color: var(--color-oscuro);
-    height:90%;
-  }
+.cuerpo
+   {
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;  		
+      justify-content: center;
+      align-content: strech;
+      height: 60%;
+      top: 300px;
+      padding: 2.5px;
+      text-align: center;
+      color: var(--color-oscuro);
+      background-color: white;
+      text-decoration: none;
+      border: 5px solid var(--color-oscuro);
+      width: 100%;
+   }  
 
-
-#nombre-persona
-{
-    float: left;
-}
-
-.puntuacion
-{
-    float: right;
-    color: var(--color-medio);
-  }
+   .columna
+   {
+     border-radius: 10px;
+     padding: 1%;
+     margin: 1%;
+     width: 25%;
+     height: 90%;
+   } 
 
 .campo
 	{
@@ -58,16 +62,16 @@
 
 .boton
     {
-    background-color: var(--color-oscuro); 
-    border: none;
-    color: var(--color-claro);
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2%;
-    border-radius: 12px;
+      width: 100px;
+      background-color: var(--color-oscuro); 
+      border: none;
+      color: var(--color-claro);
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 2%;
+      border-radius: 12px;
     }
     
 .error
