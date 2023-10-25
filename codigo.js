@@ -27,7 +27,7 @@ function quienGana(opcionJugador)
     eleccionjugador.textContent = opcionJugador;
     eleccionordenador.textContent = opcionOrdenador;
 
-    // Implement game logic to determine the winner
+    // Implementación de la lógica para determinar cual es el ganador
     if (opcionJugador === opcionOrdenador)
 	 {
         resultado.textContent = "Empate";
@@ -51,19 +51,22 @@ function quienGana(opcionJugador)
 		puntos = parseInt(puntosOrdenador.textContent, 10);
 		puntos += 1;
 		puntosOrdenador.textContent = puntos.toString();
-	
      }
   }
 
-
+// Al poner el nombre correctamente, se coloca el nombre del jugador en su sitio y
+// se resetea el contador de puntos a 0, tanto para el ordenador, como para el jugador
 function comenzarPartida()
 	{
-		etiquetaJugador.textContent = "Puntuación "+nombre.value+": ";
+		etiquetaJugador.textContent = "Puntuación de "+nombre.value+": ";
 		puntos = 0;
 		puntosOrdenador.textContent = puntos.toString();
 		puntosPersona.textContent = puntos.toString();
 	}
 
+// No se puede empezar a jugar, hasta que no hayan puesto el nombre. Así que hasta que no 
+// pongan un nombre valido, no empezará la partida. Ocuntamos los "botones" de las imagenes
+// para que no empiecen a jugar antes de tiempo.
 function ocultarTodo()
 	{
 		persona.style.visibility="hidden";
@@ -76,15 +79,17 @@ function visualizarTodo()
 		ordenador.style.visibility="visible";
 	}
 
+// El nombre no puede estar vacio
+// El nombre no puede contener espacios al principio o al final
 function verificarNombre()
 	{	
 		if(nombre.value.length == 0)
 			{
-			errorNombre.textContent ="El nombre no puede estar vacio";
+			errorNombre.textContent ="El nombre no puede estar vacío";
 			ocultarTodo();
 			}
 		else{
-//			errorNombre.textContent ="Todo bien";
+			errorNombre.textContent ="";
 			comenzarPartida();
 			visualizarTodo();
 			}
@@ -110,9 +115,14 @@ function inicializarVariables ()
 	eleccionordenador = document.getElementById("eleccionordenador");
 	resultado 		= document.getElementById("resultado");
   }
+function pelotas ()
+  {
+	alert('pelotas');
+  }
 
 function setListeners()
   {
+	nombre.addEventListener('change', verificarNombre);
 	botonNombre.addEventListener('click',verificarNombre);
 	piedra.addEventListener('click', () => quienGana("piedra"));
 	papel.addEventListener('click', () => quienGana("papel"));
