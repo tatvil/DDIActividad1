@@ -11,26 +11,49 @@ let lagarto;
 let spock;
 let resultado;
 let imagenCentral;
-let ordenadorOpcion;
-let eleccionjugador;
-let eleccionordenador;
-//let ordenadorOpcion[]=("piedra","papel","tijera","lagarto","spok");
+let opcionJugador;		//es la opcion elegida para compararla
+let opcionOrdenador;	//es la opcion elegida para compararla
+let eleccionjugador; 	// es la etiqueta del html del texto
+let eleccionordenador; 	// es la etiqueta del html del texto
+let puntos;
 
+function quienGana(opcionJugador) 
+  {
+    // Generar una eleccion aleatoria para el ordenador, desde un array de opciones
+    const opciones = ["piedra", "papel", "tijera", "lagarto", "spock"];
+    const randomIndex = Math.floor(Math.random() * opciones.length);
+    opcionOrdenador = opciones[randomIndex];
 
-function quienGana(jugador)
-	{
-		ordenadorOpcion="piedra";
-		eleccionjugador.textContent = jugador;
-		eleccionordenador.textContent = ordenadorOpcion;
-		if (jugador == ordenadorOpcion)
-			{
-				resultado.textContent = "Empate";
-			}
-		else
-			{
-				resultado.textContent = "No Empate";
-			}
-	}
+    eleccionjugador.textContent = opcionJugador;
+    eleccionordenador.textContent = opcionOrdenador;
+
+    // Implement game logic to determine the winner
+    if (opcionJugador === opcionOrdenador)
+	 {
+        resultado.textContent = "Empate";
+     } 
+	else if (
+        (opcionJugador === "piedra" && (opcionOrdenador === "tijera" || opcionOrdenador === "lagarto")) ||
+        (opcionJugador === "papel" && (opcionOrdenador === "piedra" || opcionOrdenador === "spock")) ||
+        (opcionJugador === "tijera" && (opcionOrdenador === "papel" || opcionOrdenador === "lagarto")) ||
+        (opcionJugador === "lagarto" && (opcionOrdenador === "papel" || opcionOrdenador === "spock")) ||
+        (opcionJugador === "spock" && (opcionOrdenador === "piedra" || opcionOrdenador === "tijera"))
+     ) 
+	 {
+        resultado.textContent = "Ganaste";
+		puntos = parseInt(puntosPersona.textContent, 10);
+		puntos += 1;
+		puntosPersona.textContent = puntos.toString();	
+     } 
+	else 
+	 {
+        resultado.textContent = "Perdiste";
+		puntos = parseInt(puntosOrdenador.textContent, 10);
+		puntos += 1;
+		puntosOrdenador.textContent = puntos.toString();
+	
+     }
+  }
 
 
 function comenzarPartida()
@@ -86,20 +109,19 @@ function inicializarVariables ()
 	tijera    		= document.getElementById("tijera");
 	lagarto   		= document.getElementById("lagarto");
 	spock	  		= document.getElementById("spock");
-	eleccionJugador = document.getElementById("eleccionjugador");
-	eleccionOrdenador = document.getElementById("eleccionordenador");
+	eleccionjugador = document.getElementById("eleccionjugador");
+	eleccionordenador = document.getElementById("eleccionordenador");
 	resultado 		= document.getElementById("resultado");
   }
 
 function setListeners()
   {
-	nombre.addEventListener("onKeoy",verificarNombre);
 	botonNombre.addEventListener('click',verificarNombre);
-	piedra.addEventListener('click',quienGana("piedra"));
-	papel.addEventListener('click',quienGana("papel"));
-	tijera.addEventListener('click',quienGana("tijera"));
-	lagarto.addEventListener('click',quienGana("lagarto"));
-	spok.addEventListener('click',quienGana("spok"));
+	piedra.addEventListener('click', () => quienGana("piedra"));
+	papel.addEventListener('click', () => quienGana("papel"));
+	tijera.addEventListener('click', () => quienGana("tijera"));
+	lagarto.addEventListener('click', () => quienGana("lagarto"));
+	spock.addEventListener('click', () => quienGana("spock"));
   }
 
 
