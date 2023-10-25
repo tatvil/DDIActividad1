@@ -58,23 +58,22 @@ function quienGana(opcionJugador)
 
 function comenzarPartida()
 	{
-		etiquetaJugador.textContent = "Tu: "+nombre;
-		puntosPersona.textContent.value = puntosPersona.textContent.value + 1;
+		etiquetaJugador.textContent = "Puntuación "+nombre.value+": ";
+		puntos = 0;
+		puntosOrdenador.textContent = puntos.toString();
+		puntosPersona.textContent = puntos.toString();
 	}
 
 function ocultarTodo()
 	{
 		persona.style.visibility="hidden";
 		ordenador.style.visibility="hidden";
-	//	document.getElementById("imagencentro").style.visibility = "hidden";
-	//    imagenCentral.style.visibility="hidden";
 	}
 
 function visualizarTodo()
 	{
 		persona.style.visibility="visible";
 		ordenador.style.visibility="visible";
-//			imagenCentral.style.visibility="visible";
 	}
 
 function verificarNombre()
@@ -82,14 +81,12 @@ function verificarNombre()
 		if(nombre.value.length == 0)
 			{
 			errorNombre.textContent ="El nombre no puede estar vacio";
-//			etiquetaJugador.textContent = "Jugador";
 			ocultarTodo();
 			}
 		else{
-			errorNombre.textContent ="Todo bien";
+//			errorNombre.textContent ="Todo bien";
+			comenzarPartida();
 			visualizarTodo();
-			etiquetaJugador.textContent = "Tu: "+nombre.value;
-
 			}
 	}
 

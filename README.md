@@ -45,3 +45,5 @@ carpetas según la necesidad.
 Es fundamental que durante la ejecución de la aplicación web no se produzcan
 excepciones ni ningún tipo de error. Habrá que gestionarlos y tenerlos en
 cuenta desde el código.
+
+Si quieres ver como funciona [haz click aqui](https://www.tecnologia-facil.es/dam/ddi/actividad1/)
